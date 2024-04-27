@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Space Parallax Scrolling</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk:MORF,SHLN@22,25.7&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+
+</head>
+<body>
+    <!-- partial:index.partial.html -->
+    <header>
+        <a href="#" class="logo">Videogames</a>
+    </header>
+
+    <section>
+        <img src="/Images/stars.png" id="stars">
+        <img src="/Images/moon.png" id="moon" />
+        <img src="/Images/montains.png" id="mountains_behind">
+        <h2 id="text" class="honk">Play now!</h2>
+        <img src="/Images/montainsfront.png" id="mountains_front">
+    </section>
+
+    <div class="sec" id="sec">
+        <h2 class=" honk text-center">¡Hola, jugador/a! 🎮</h2>
+        <p>
+            ¡Bienvenido a nuestro universo de videojuegos! Aquí, la aventura, la emoción y los desafíos no tienen límites. Nos apasionan los videojuegos tanto como a ti y estamos emocionados de compartir este viaje contigo.
+
+            Desde los clásicos atemporales hasta las últimas novedades, cubrimos todo el espectro de los videojuegos. ¡Vamos a jugar!
+
+            ¡Disfruta de tu estancia y que comiencen los juegos! 🕹️
+        </p>
+    </div>
+    
+    <div class="text-center">
+        <h3 class="honk" style="
+            font-size: 100px";>
+            TETRIS
+        </h3>
+    </div>
+    <div style="text-align: -webkit-center;">
+       
+            <div id="tetris">
+            <div id="info">
+                <div id="next_shape"></div>
+                <p class="honk" id="level">Level: <span></span></p>
+                <p id="lines">Lines: <span></span></p>
+                <p id="score">Score: <span></span></p>
+                <p id="time">Time: <span></span></p>
+                <button id="start">Start</button>
+                <button id="rotate"><i class="ri-arrow-turn-back-fill"></i></button>
+                <button id="move-left"><i class="ri-arrow-left-fill"></i></button>
+                <button id="move-right"><i class="ri-arrow-right-fill"></i></button>
+                <button id="drop"><i class="ri-arrow-down-fill"></i></button>
+                <button id="pause-btn">Pause</button>
+            </div>
+                <div id="canvas"></div>
+            </div>
+           
+    </div>
+
+    <div id="container">
+       
+            <h3 class="honk" style="
+
+            text-align: -webkit-center;
+            margin-top: 455px;
+            font-size: 100px;
+            " ;>
+                STACK GAME 
+            </h3>
+       
+        <div id="game"></div>
+        <div id="score1">0</div>
+        <div id="instructions">Click to place the block!</div>
+        <div class="game-over">
+            <h2>Game Over</h2>
+            
+            <p>Click to start again!</p>
+        </div>
+        <div class="game-ready">
+            <div id="start-button">Start</div>
+            <div></div>
+        </div>
+    </div>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content pt-5 pb-2">
+                <div class="row" style="justify-content: space-around;">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-text">
+                                <span>Sobre el proyecto.</span>
+                                <p>
+                                   Tecnologías Utilizadas: HTML,CSS y Javascript.<br />
+                                   Frameworks: Bootstrap. <br />
+                                   Librerías: Three.js, GSAP y Remixicon.<br />
+                                   Fuente: Google Fonts - Honk. <br />
+                                    Edición  de Imágenes: Pixlr. <br />
+                                    ¡Espero que te haya gustado! 😊 <br />
+                                    Desarrollado por Stefany Albarrán.
+                               </p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Mis redes.</span>
+                                <a href="https://github.com/stephaniealbarran"><i class="ri-github-fill"></i></a>
+                                <a href="https://www.linkedin.com/in/stefany-albarran"><i class="ri-linkedin-box-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <span>
+                                   Sobre mí.
+                                </span>
+                            </div>
+                            <ul>
+                                <li>
+                                    ¡Hola! Soy Stefany. 😊 Tengo habilidades en desarrollo front-end, utilizando tecnologías como HTML, CSS, JavaScript y React. En el back-end, tengo experiencia con .NET Core y C#.<br />
+                                    Además, realizo despliegues de aplicaciones y bases de datos en la nube, utilizando servicios como Azure y AWS, y gestiono contenedores con Docker.
+                                </li>
+                            </ul>
+                        </div>
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <span style="color:white">Mi email.</span>
+                            <p style="color:lightgrey">stefanyalbarran@hotmail.com</p>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row" style="justify-content: space-around;">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-center">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2024, All Right Reserved <a href="https://www.linkedin.com/in/stefany-albarran/">Stefany Albarrán</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+</body>
+</html>
